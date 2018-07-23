@@ -1,0 +1,302 @@
+<template>
+  <div id="app">
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-10">
+            <a class="blog-header-logo text-dark" href="javascript:;">Administrator</a>
+          </div>
+          <div class="col-2 d-flex justify-content-end align-items-center">
+            <a class="text-muted" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
+            </a>
+            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+          </div>
+        </div>
+      </header>
+      <br>
+      <main>
+        <div class="row">
+          <div class="col-12">
+            <!-- <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="chk_all">
+              <label class="custom-control-label" for="chk_all">全选</label>
+            </div> -->
+            <button type="button" class="btn btn-primary">新增</button>
+            <button type="button" class="btn btn-danger">删除</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="">
+              <table class="table table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1,001</td>
+                    <td>Lorem</td>
+                    <td>ipsum</td>
+                    <td>dolor</td>
+                    <td>sit</td>
+                  </tr>
+                  <tr>
+                    <td>1,002</td>
+                    <td>amet</td>
+                    <td>consectetur</td>
+                    <td>adipiscing</td>
+                    <td>elit</td>
+                  </tr>
+                  <tr>
+                    <td>1,003</td>
+                    <td>Integer</td>
+                    <td>nec</td>
+                    <td>odio</td>
+                    <td>Praesent</td>
+                  </tr>
+                  <tr>
+                    <td>1,003</td>
+                    <td>libero</td>
+                    <td>Sed</td>
+                    <td>cursus</td>
+                    <td>ante</td>
+                  </tr>
+                  <tr>
+                    <td>1,004</td>
+                    <td>dapibus</td>
+                    <td>diam</td>
+                    <td>Sed</td>
+                    <td>nisi</td>
+                  </tr>
+                  <tr>
+                    <td>1,005</td>
+                    <td>Nulla</td>
+                    <td>quis</td>
+                    <td>sem</td>
+                    <td>at</td>
+                  </tr>
+                  <tr>
+                    <td>1,006</td>
+                    <td>nibh</td>
+                    <td>elementum</td>
+                    <td>imperdiet</td>
+                    <td>Duis</td>
+                  </tr>
+                  <tr>
+                    <td>1,007</td>
+                    <td>sagittis</td>
+                    <td>ipsum</td>
+                    <td>Praesent</td>
+                    <td>mauris</td>
+                  </tr>
+                  <tr>
+                    <td>1,008</td>
+                    <td>Fusce</td>
+                    <td>nec</td>
+                    <td>tellus</td>
+                    <td>sed</td>
+                  </tr>
+                  <tr>
+                    <td>1,009</td>
+                    <td>augue</td>
+                    <td>semper</td>
+                    <td>porta</td>
+                    <td>Mauris</td>
+                  </tr>
+                  <tr>
+                    <td>1,010</td>
+                    <td>massa</td>
+                    <td>Vestibulum</td>
+                    <td>lacinia</td>
+                    <td>arcu</td>
+                  </tr>
+                  <tr>
+                    <td>1,011</td>
+                    <td>eget</td>
+                    <td>nulla</td>
+                    <td>Class</td>
+                    <td>aptent</td>
+                  </tr>
+                  <tr>
+                    <td>1,012</td>
+                    <td>taciti</td>
+                    <td>sociosqu</td>
+                    <td>ad</td>
+                    <td>litora</td>
+                  </tr>
+                  <tr>
+                    <td>1,013</td>
+                    <td>torquent</td>
+                    <td>per</td>
+                    <td>conubia</td>
+                    <td>nostra</td>
+                  </tr>
+                  <tr>
+                    <td>1,014</td>
+                    <td>per</td>
+                    <td>inceptos</td>
+                    <td>himenaeos</td>
+                    <td>Curabitur</td>
+                  </tr>
+                  <tr>
+                    <td>1,015</td>
+                    <td>sodales</td>
+                    <td>ligula</td>
+                    <td>in</td>
+                    <td>libero</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
+
+<style>
+/* stylelint-disable selector-list-comma-newline-after */
+
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+/*
+ * Blog name and description
+ */
+.blog-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.blog-description {
+  font-size: 1.1rem;
+  color: #999;
+}
+
+@media (min-width: 40em) {
+  .blog-title {
+    font-size: 3.5rem;
+  }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+</style>
