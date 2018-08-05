@@ -10,6 +10,7 @@ import VueAxios from 'vue-axios'
 // import $ from 'jquery'
 import './assets/css/perfect-scrollbar.min.css'
 import './assets/css/material-design-iconic-font.min.css'
+import './assets/select2/select2.min.css'
 import './assets/css/app.css'
 
 // axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*'
