@@ -11,7 +11,7 @@
             <input class="form-control" type="text" placeholder="标题">
           </div>
           <div class="form-group">
-            <textarea class="form-control" rows="15" placeholder="文若流沙 思若泉涌"></textarea>
+            <textarea id="editor1" v-model="content"></textarea>
           </div>
         </div>
       </div>
@@ -49,17 +49,19 @@
           </div>
 
           <div class="form-group pt-3">
-            <button class="btn btn-space btn-primary">发布</button>
+            <button class="btn btn-space btn-primary" @click="save">发布</button>
             <button class="btn btn-space btn-secondary">取消</button>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 </div>
 </template>
 
 <script>
+import BootstrapBundle from '../../assets/js/bootstrap.bundle.min.js'
 import Select2Full from '../../assets/select2/select2.full.min.js'
 import SummerNote from '../../assets/summernote/summernote-bs4.min.js'
 import SummerNoteBeagle from '../../assets/summernote/summernote-ext-beagle'
@@ -67,6 +69,7 @@ import SummerNoteBeagle from '../../assets/summernote/summernote-ext-beagle'
 export default {
   name: 'DashBoardIndex',
   components: {
+    BootstrapBundle,
     Select2Full,
     SummerNote,
     SummerNoteBeagle
@@ -76,11 +79,13 @@ export default {
       categories: [],
       tags: [],
       selectCategory: '',
-      selectTags: []
+      selectTags: [],
+      content: ''
     }
   },
   mounted () {
     this.initSelect2()
+    this.initEditor()
     this.initCategories()
     this.initTags()
     this.loadArticles()
@@ -89,6 +94,14 @@ export default {
     initSelect2: function () {
       $('.select2').select2({'width': '100%'})
       $('.tags').select2({'tags': 0, 'width': '100%'})
+    },
+    initEditor: function () {
+      $(function () {
+        $('#editor1').summernote({ 
+          height: 600,
+          placeholder: '文若流沙 思若泉涌'
+        })
+      })
     },
     initCategories: function () {
       let data = []
@@ -114,6 +127,11 @@ export default {
       this.tags = data
     },
     loadArticles: function () {
+
+    },
+    save: function () {
+      alert('content: ' + this.content)
+      alert($('#editor1').summernote('code'))
     }
   }
 }
